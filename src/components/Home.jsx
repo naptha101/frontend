@@ -40,9 +40,11 @@ const Home = () => {
 
   // Function to fetch data from server
   const getData = async () => {
+    console.log("hello");
     try {
+  
       const response = await axios.get( "https://backend-1-sf76.onrender.com"+"/users/get");
-      console.log("hello");
+     // console.log("hello");
 
      console.log(response.data);
       setUsers(response.data); // Assuming response.data is an array of users
